@@ -1,0 +1,47 @@
+﻿@model CleanArchitectureTemplate.Application.DTOs.ProductDTO
+@{
+    ViewData["Title"] = "Eliminar Producto";
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="alert alert-warning" role="alert">
+    <strong>Atención:</strong> Esta acción eliminará permanentemente el producto.
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">@Model?.Nombre ?? "Producto sin nombre"</h5>
+        <p class="card-text">
+            <strong>Id:</strong> @Model?.Id
+        </p>
+         
+        @if (!string.IsNullOrWhiteSpace(Model?.Descripcion))
+        {
+            <p class="card-text">
+                <strong>Descripción:</strong> @Model.Descripcion
+            </p>
+        }
+
+        @if (Model is not null)
+        {
+            <p class="card-text">
+                @if (Model.GetType().GetProperty("Precio") is not null)
+                {
+                    <strong>Precio:</strong> 
+                    @String.Format("{0:C}", Model.GetType().GetProperty("Precio")!.GetValue(Model))
+                }
+                @if (Model.GetType().GetProperty("Stock") is not null)
+                {
+                    <span class="ms-3"><strong>Stock:</strong> @Model.GetType().GetProperty("Stock")!.GetValue(Model)</span>
+                }
+            </p>
+        }
+    </div>
+</div>
+
+<form asp-action="Eliminar" asp-controller="Products" asp-route-id="@Model?.Id" method="post" class="d-inline">
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" asp-controller="Products" class="btn btn-secondary ms-2">Cancelar</a>
+</form>
