@@ -46,8 +46,15 @@ namespace CleanArchitectureTemplate.Application.UseCases
             if (productDTO.Precio < 0)
                 throw new ArgumentException("El precio del producto no debe ser negativo");
 
+            // busco el produco por el nombre por si ya existe
+            var productoExistente = await _productRepository.GetByNameAsync(productDTO.Nombre);
+
+            // si lo ha encontrado lanzo una exception
+            if (productoExistente != null)
+                throw new ArgumentException("El producto ya existe");
+
             // Mapeamos el DTO a la entidad
-            var producto = new Product 
+            var producto = new Product (productDTO.Nombre, productDTO.Precio)
             { 
                 Descripcion = productDTO.Descripcion,
                 Nombre =productDTO.Nombre,

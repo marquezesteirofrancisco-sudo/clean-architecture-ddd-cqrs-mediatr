@@ -18,5 +18,16 @@ namespace CleanArchitectureTemplate.Domain.Entities
 
         public DateTime FechaCreacion { get; set; }
 
+        public Product(string nombre, decimal precio)
+        {
+            if (string.IsNullOrEmpty(nombre))
+                throw new ArgumentException("El nombre no puede estar vacia", nameof(nombre));
+
+            if (precio < 0)
+                throw new ArgumentException(nameof(nombre), "El precio debe ser mayor que cero.");
+
+            Nombre = nombre;
+            Precio = precio;
+        }
     }
 }
