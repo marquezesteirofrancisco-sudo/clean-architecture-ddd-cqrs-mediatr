@@ -4,7 +4,7 @@ using CleanArchitectureTemplate.Infraestructure.Data;
 using CleanArchitectureTemplate.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,7 +29,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ProductService>();
 
 
-
+// Configurar MediatR
+builder.Services.AddMediatR(typeof(ProductService).Assembly);
 
 
 var app = builder.Build();
