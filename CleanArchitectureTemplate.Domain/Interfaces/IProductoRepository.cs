@@ -10,7 +10,7 @@ namespace CleanArchitectureTemplate.Domain.Interfaces
     public interface IProductRepository
     {
         Task<IEnumerable<Product>> GetAllAsync();
-        Task<Product> GetByIdAsync();
+        Task<Product> GetByIdAsync(int id);
         Task<Product> GetByNameAsync(string name);
         Task AddAsync(Product producto);
         Task UpdateAsync(Product producto);
