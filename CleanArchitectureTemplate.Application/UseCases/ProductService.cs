@@ -99,7 +99,7 @@ namespace CleanArchitectureTemplate.Application.UseCases
 
 
             // Mapeamos el DTO a la entidad
-            var producto = new Product
+            var producto = new Product(productDTO.Nombre, productDTO.Precio)
             {
                 Id = productDTO.Id,
                 Descripcion = productDTO.Descripcion,
