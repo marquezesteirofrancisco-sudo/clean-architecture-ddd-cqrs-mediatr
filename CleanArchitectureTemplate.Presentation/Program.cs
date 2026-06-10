@@ -1,6 +1,10 @@
-﻿using CleanArchitectureTemplate.Infraestructure.Data;
+﻿using CleanArchitectureTemplate.Application.UseCases;
+using CleanArchitectureTemplate.Domain.Interfaces;
+using CleanArchitectureTemplate.Infraestructure.Data;
+using CleanArchitectureTemplate.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,10 +19,19 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>()
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-// builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true) .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true) .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages();
+
+
+// dependencia de nuestra logica de negocio
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ProductService>();
+
+
+
+
 
 var app = builder.Build();
 
