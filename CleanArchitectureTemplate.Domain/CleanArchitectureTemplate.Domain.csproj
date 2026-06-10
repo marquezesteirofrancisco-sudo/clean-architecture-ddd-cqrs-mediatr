@@ -6,8 +6,7 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>   
-    <Folder Include="Interfaces\" />
+  <ItemGroup>
     <Folder Include="Repositories\" />
   </ItemGroup>
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureTemplate.Domain.Entities
 {
-    public class Producto
+    public class Product
     {
         public int Id { get; set; }
 

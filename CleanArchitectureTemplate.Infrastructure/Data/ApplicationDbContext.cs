@@ -13,6 +13,6 @@ namespace CleanArchitectureTemplate.Infraestructure.Data
 
         // Agregamos todas las Entities o Modelos con DbSet 
 
-        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Product> Productos { get; set; }
     }
 }
