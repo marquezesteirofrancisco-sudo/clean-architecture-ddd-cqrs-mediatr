@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-CleanArchitectureTemplate.Presentation-c58f83b5-d6a7-4d6d-aa6a-5c533a1a2eb8</UserSecretsId>
   </PropertyGroup>

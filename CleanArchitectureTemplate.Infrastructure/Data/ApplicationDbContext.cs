@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using CleanArchitectureTemplate.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CleanArchitectureTemplate.Infraestructure.Data
@@ -9,5 +10,9 @@ namespace CleanArchitectureTemplate.Infraestructure.Data
             : base(options)
         {
         }
+
+        // Agregamos todas las Entities o Modelos con DbSet 
+
+        public DbSet<Producto> Productos { get; set; }
     }
 }
