@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CleanArchitectureTemplate.Application/1.0.0": {
+        "dependencies": {
+          "CleanArchitectureTemplate.Domain": "1.0.0"
+        },
+        "runtime": {
+          "CleanArchitectureTemplate.Application.dll": {}
+        }
+      },
+      "CleanArchitectureTemplate.Domain/1.0.0": {
+        "runtime": {
+          "CleanArchitectureTemplate.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CleanArchitectureTemplate.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CleanArchitectureTemplate.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

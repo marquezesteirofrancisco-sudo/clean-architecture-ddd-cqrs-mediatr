@@ -1,0 +1,11 @@
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\bin\Debug\net9.0\CleanArchitectureTemplate.Domain.deps.json
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\bin\Debug\net9.0\CleanArchitectureTemplate.Domain.dll
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\bin\Debug\net9.0\CleanArchitectureTemplate.Domain.pdb
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\CleanArchitectureTemplate.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\CleanArchitectureTemplate.Domain.AssemblyInfoInputs.cache
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\CleanArchitectureTemplate.Domain.AssemblyInfo.cs
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\CleanArchitectureTemplate.Domain.csproj.CoreCompileInputs.cache
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\CleanArchitectureTemplate.Domain.dll
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\refint\CleanArchitectureTemplate.Domain.dll
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\CleanArchitectureTemplate.Domain.pdb
+C:\_REPOSITORIOS\Udemy\CleanArchitectureTemplate\CleanArchitectureTemplate\CleanArchitectureTemplate.Domain\obj\Debug\net9.0\ref\CleanArchitectureTemplate.Domain.dll

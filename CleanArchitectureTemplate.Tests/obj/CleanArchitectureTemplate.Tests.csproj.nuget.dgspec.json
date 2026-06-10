@@ -1,0 +1,235 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Tests\\CleanArchitectureTemplate.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj",
+        "projectName": "CleanArchitectureTemplate.Application",
+        "projectPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj",
+        "packagesPath": "C:\\Users\\marqu\\.nuget\\packages\\",
+        "outputPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj": {
+                "projectPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj",
+        "projectName": "CleanArchitectureTemplate.Domain",
+        "projectPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj",
+        "packagesPath": "C:\\Users\\marqu\\.nuget\\packages\\",
+        "outputPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Tests\\CleanArchitectureTemplate.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Tests\\CleanArchitectureTemplate.Tests.csproj",
+        "projectName": "CleanArchitectureTemplate.Tests",
+        "projectPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Tests\\CleanArchitectureTemplate.Tests.csproj",
+        "packagesPath": "C:\\Users\\marqu\\.nuget\\packages\\",
+        "outputPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\marqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj": {
+                "projectPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Application\\CleanArchitectureTemplate.Application.csproj"
+              },
+              "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj": {
+                "projectPath": "C:\\_REPOSITORIOS\\Udemy\\CleanArchitectureTemplate\\CleanArchitectureTemplate\\CleanArchitectureTemplate.Domain\\CleanArchitectureTemplate.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[18.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.6.1, )"
+            },
+            "NUnitTestAdapter": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
