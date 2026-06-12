@@ -27,7 +27,7 @@ builder.Services.AddRazorPages();
 // **** INICIO INYECCION DE PRODUCTOS ****
 // dependencia de nuestra logica de negocio
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-//builder.Services.AddScoped<ProductService>(); >>> sin MediatR
+builder.Services.AddScoped<ProductService>(); //>>> sin MediatR
 
 // Configurar MediatR
 builder.Services.AddMediatR(typeof(ProductService).Assembly); // >>> con MediatR
@@ -36,7 +36,10 @@ builder.Services.AddMediatR(typeof(ProductService).Assembly); // >>> con MediatR
 
 // **** INICIO INYECCION DE CLIENTES ****
 builder.Services.AddScoped<IClientesRepository, ClienteRepository>();
-builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<ClienteService>(); // >> sin MediatR
+
+// Configurar MediatR
+builder.Services.AddMediatR(typeof(ClienteService).Assembly); // >>> con MediatR
 // **** FIN INYECCION DE CLIENTES ****
 
 var app = builder.Build();

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace CleanArchitectureTemplate.Application.Features.Productos.Commands.DeleteProducto
 {
-    internal class DeleteProductoHandler: IRequestHandler<DeleteProductoCommand>
+    internal class DeleteProductoHandler : IRequestHandler<DeleteProductoCommand>
     {
         private readonly IProductRepository _productRepository;
 

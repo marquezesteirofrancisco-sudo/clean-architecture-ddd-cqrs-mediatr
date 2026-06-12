@@ -32,22 +32,22 @@ else
                 </tr>
             </thead>
             <tbody>
-                @foreach (var producto in Model)
+                @foreach (var cliente in Model)
                 {
                     <tr>
-                        <td><strong>#@producto.Id</strong></td>
-                        <td>@producto.Nombre</td>
-                        <td>@producto.Descripcion</td>
-                        <td>@producto.Direccion</td>
-                        <td>@producto.Ciudad</td>
-                        <td>@producto.CodigoPostal</td>
+                        <td><strong>#@cliente.Id</strong></td>
+                        <td>@cliente.Nombre</td>
+                        <td>@cliente.Descripcion</td>
+                        <td>@cliente.Direccion</td>
+                        <td>@cliente.Ciudad</td>
+                        <td>@cliente.CodigoPostal</td>
                         
                         <td class="text-center">
                             <div class="btn-group" role="group">
-                                <a asp-controller="Clientes" asp-action="Editar" asp-route-id="@producto.Id" class="btn btn-sm btn-outline-warning">
+                                <a asp-controller="Clientes" asp-action="Editar" asp-route-id="@cliente.Id" class="btn btn-sm btn-outline-warning">
                                     Editar
                                 </a>
-                                <a asp-controller="Clientes" asp-action="Eliminar" asp-route-id="@producto.Id" class="btn btn-sm btn-outline-danger" onclick="return confirm('¿Seguro que deseas eliminar este cliente?');">
+                                <a asp-controller="Clientes" asp-action="Eliminar" asp-route-id="@cliente.Id" class="btn btn-sm btn-outline-danger" onclick="return confirm('¿Seguro que deseas eliminar este cliente?');">
                                     Eliminar
                                 </a>
                             </div>

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureTemplate.Application.Features.Productos.Queries.GetAllProductos
 {
-    public class GetAllProductosHandler: IRequestHandler<GetAllProductosQuery, List<ProductDTO>>
+    public class GetAllProductosHandler : IRequestHandler<GetAllProductosQuery, List<ProductDTO>>
     {
         private readonly IProductRepository _productRepository;
 
