@@ -26,7 +26,7 @@ builder.Services.AddRazorPages();
 
 // dependencia de nuestra logica de negocio
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<ProductService>();
+//builder.Services.AddScoped<ProductService>();
 
 
 // Configurar MediatR
