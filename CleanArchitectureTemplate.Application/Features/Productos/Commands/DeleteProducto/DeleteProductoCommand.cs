@@ -10,5 +10,7 @@ namespace CleanArchitectureTemplate.Application.Features.Productos.Commands.Dele
     public class DeleteProductoCommand : IRequest
     {
         public int Id { get; set; }
+
+        public DeleteProductoCommand(int id) => Id = id;
     }
 }

@@ -27,6 +27,7 @@ namespace CleanArchitectureTemplate.Application.Features.Productos.Queries.GetAl
                 Id = p.Id,
                 Nombre = p.Nombre,
                 Precio = p.Precio,
+                Descripcion = p.Descripcion,
             }).ToList();
         }
     }
