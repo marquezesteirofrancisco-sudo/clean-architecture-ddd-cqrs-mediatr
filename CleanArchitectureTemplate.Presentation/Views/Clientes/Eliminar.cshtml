@@ -1,0 +1,42 @@
+﻿@model CleanArchitectureTemplate.Application.DTOs.ClienteDTO
+@{
+    ViewData["Title"] = "Eliminar Cliente";
+}
+
+<h3>@ViewData["Title"]</h3>
+
+<div class="alert alert-warning" role="alert">
+    <strong>Atención:</strong> Esta acción eliminará permanentemente el cliente.
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">@Model?.Nombre ?? "Cliente sin nombre"</h5>
+        <p class="card-text">
+            <strong>Id:</strong> @Model?.Id
+        </p>
+
+        @if (!string.IsNullOrWhiteSpace(Model?.Descripcion))
+        {
+            <p class="card-text">
+                <strong>Descripción:</strong> @Model.Descripcion
+            </p>
+        }
+
+        @if (Model is not null)
+        {
+            <p class="card-text">
+                @if (Model.GetType().GetProperty("CodigoPostal") is not null)
+                {
+                    <span class="ms-3"><strong>C.P.:</strong> @Model.GetType().GetProperty("CodigoPostal")!.GetValue(Model)</span>
+                }
+            </p>
+        }
+    </div>
+</div>
+
+<form asp-action="Eliminar" asp-controller="Clientes" asp-route-id="@Model?.Id" method="post" class="d-inline">
+    @Html.AntiForgeryToken()
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" asp-controller="Clientes" class="btn btn-secondary ms-2">Cancelar</a>
+</form>
